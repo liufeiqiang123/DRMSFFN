@@ -1,0 +1,9 @@
+**********************
+Method_1: DRMSFFN; Set: Set5
+x4 1 baby_HR_x4.png baby.png: PSNR= 33.800766 SSIM= 0.893737
+x4 2 bird_HR_x4.png bird.png: PSNR= 35.238352 SSIM= 0.947078
+x4 3 butterfly_HR_x4.png butterfly.png: PSNR= 28.986672 SSIM= 0.928839
+x4 4 head_HR_x4.png head.png: PSNR= 32.988851 SSIM= 0.797948
+x4 5 woman_HR_x4.png woman.png: PSNR= 30.582176 SSIM= 0.913168
+--------Mean--------
+x4: PSNR= 32.319363 SSIM= 0.896154 IFC= 0.000000

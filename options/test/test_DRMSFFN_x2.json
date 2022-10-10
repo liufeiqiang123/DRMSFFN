@@ -1,0 +1,34 @@
+{
+    "mode": "sr",
+    "use_cl": false,
+    "gpu_ids": [0],
+
+    "scale": 2,
+    "degradation": "BI",
+    "is_train": false,
+    "use_chop": false,
+    "rgb_range": 255,
+    "self_ensemble": false,
+
+    "datasets": {
+        "test_set1": {
+            "mode": "LRHR",
+            "dataroot_HR": "/data/home/liufeiqiang/SR-Dataset/TestData_SR/test_x2/Set5_mod_x2",
+            "dataroot_LR": "/data/home/liufeiqiang/SR-Dataset/TestData_SR/test_x2/Set5_LR_x2",
+            "data_type": "img"
+        }
+    },
+
+    "networks": {
+        "which_model": "DRMSFFN",
+        "num_features": 64,
+        "in_channels": 3,
+        "out_channels": 3,
+        "num_recursion": 6
+
+    },
+
+    "solver": {
+        "pretrained_path": "./models/DRMSFFN_x2.pth"
+    }
+}
