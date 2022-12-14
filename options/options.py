@@ -15,39 +15,30 @@ def parse(opt_path):
         for line in f:
             line = line.split('//')[0] + '\n'
             json_str += line
-    opt = json.loads(json_str, object_pairs_hook=OrderedDict)     #利用json.loads函数将最原始的Json文件进行解析，放在opt中
+    opt = json.loads(json_str, object_pairs_hook=OrderedDict)     
 
-    opt['timestamp'] = get_timestamp()           #给opt字典增加一个键值
+    opt['timestamp'] = get_timestamp()          
     scale = opt['scale']
     rgb_range = opt['rgb_range']
 
-    # # export CUDA_VISIBLE_DEVICES
-    # if torch.cuda.is_available():     #判断GPU是否可用
-    #     gpu_list = ','.join(str(x) for x in opt['gpu_ids'])
-    #     os.environ['CUDA_VISIBLE_DEVICES'] = gpu_list
-    #     print('===> Export CUDA_VISIBLE_DEVICES = [' + gpu_list + ']')
-    # else:
-    #     print('===> CPU mode is set (NOTE: GPU is recommended)')
-    # 确定使用电脑中的哪一块GPU
     gpu_list = ','.join(str(x) for x in opt['gpu_ids'])
     os.environ['CUDA_VISIBLE_DEVICES'] = gpu_list
     print('===> Export CUDA_VISIBLE_DEVICES = [' + gpu_list + ']')
 
-    # datasets,在此处为train何val datasets增加了三个键值信息  因为我们的训练数据集需要这些信息
     for phase, dataset in opt['datasets'].items():
-        #phase = phase.split('_')[0]        #这句话在这里是一句废话
+        #phase = phase.split('_')[0]        
         dataset['phase'] = phase
         dataset['scale'] = scale
         dataset['rgb_range'] = rgb_range
         
     # for network initialize
-    opt['networks']['scale'] = opt['scale']     #给networks子字典增加一个scale.
+    opt['networks']['scale'] = opt['scale']    
     network_opt = opt['networks']
-    #输出文件夹的名字，采用了字符串格式化
+
     config_str = '%s_in%df%d_x%d'%(network_opt['which_model'].upper(), network_opt['in_channels'],
                                                         network_opt['num_features'], opt['scale'])
 
-    exp_path = os.path.join(os.getcwd(), 'experiments', config_str)  #将当前路径，experimnets 和字符串合成一个路径
+    exp_path = os.path.join(os.getcwd(), 'experiments', config_str)  
 
     if opt['is_train'] and opt['solver']['pretrain']:
         if 'pretrained_path' not in list(opt['solver'].keys()): raise ValueError("[Error] The 'pretrained_path' does not declarate in *.json")
