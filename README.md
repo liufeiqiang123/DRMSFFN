@@ -38,7 +38,7 @@ If you find our work useful in your research or publications, please star the co
     change the datasets storage path in the test_DRMSFFN_x2.json, test_DRMSFFN_x3.json and test_DRMSFFN_x4.json files.
     
 ## Results:
-Quantitative Results:![Quantitative Results](https://user-images.githubusercontent.com/42378133/207483168-2570d986-637d-42b1-888a-572775799ca0.png)
+Quantitative Results:![Quantitative Results](https://user-images.githubusercontent.com/42378133/207537886-e01230e1-a428-464f-a82f-21e7395d1bad.png)
 Quantitative comparison for scale factors ×2, ×3 and ×4 of the proposed method DRMSFFN with state-of-the-art methods. The best and the second best results are indicated in bold and underlined, respectively.
 
 Some Qualitative Results:
