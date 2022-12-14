@@ -33,7 +33,7 @@ class SRSolver(BaseSolver):
             self.model.train()
 
             # set cl_loss
-            if self.use_cl:            #这里是否使用课程学习指的是是否使用了多loss进行监督
+            if self.use_cl:      
                 self.cl_weights = self.opt['solver']['cl_weights']
                 assert self.cl_weights, "[Error] 'cl_weights' is not be declared when 'use_cl' is true"
 
