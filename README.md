@@ -39,7 +39,7 @@ If you find our work useful in your research or publications, please star the co
     
 ## Results:
 Quantitative Results:![Quantitative Results](https://user-images.githubusercontent.com/42378133/207483168-2570d986-637d-42b1-888a-572775799ca0.png)
-
+Quantitative comparison for scale factors ×2, ×3 and ×4 of the proposed method DRMSFFN with state-of-the-art methods. The best and the second best results are indicated in bold and underlined, respectively.
 
 
 
