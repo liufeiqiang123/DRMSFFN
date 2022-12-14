@@ -13,8 +13,8 @@
     "datasets": {
         "test_set1": {
             "mode": "LRHR",
-            "dataroot_HR": "/data/home/liufeiqiang/SR-Dataset/TestData_SR/test_x2/Set5_mod_x2",
-            "dataroot_LR": "/data/home/liufeiqiang/SR-Dataset/TestData_SR/test_x2/Set5_LR_x2",
+            "dataroot_HR": "./results/HR/Set5/x2",
+            "dataroot_LR": "./results/LR/LRBI/Set5/x2",
             "data_type": "img"
         }
     },
