@@ -30,14 +30,15 @@ If you find our work useful in your research or publications, please star the co
 
 ## Test:
 
-    python test.py -opt options/test/test_FRN_x2.json
-    python test.py -opt options/test/test_FRN_x3.json
-    python test.py -opt options/test/test_FRN_x4.json
+    python test.py -opt options/test/test_DRMSFFN_x2.json
+    python test.py -opt options/test/test_DRMSFFN_x3.json
+    python test.py -opt options/test/test_DRMSFFN_x4.json
 
     Finally, PSNR/SSIM values for Set5 are shown on your screen, you can find the reconstruction images in ./results. Other standard SR benchmark dadasets, you need to
-    change the datasets storage path in the test_FRN_x2.json, test_FRN_x3.json and test_FRN_x4.json files.
+    change the datasets storage path in the test_DRMSFFN_x2.json, test_DRMSFFN_x3.json and test_DRMSFFN_x4.json files.
     
 ## Results:
+Quantitative Results:![Quantitative Results](https://user-images.githubusercontent.com/42378133/207483168-2570d986-637d-42b1-888a-572775799ca0.png)
 
 
 
