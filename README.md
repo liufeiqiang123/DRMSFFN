@@ -50,6 +50,6 @@ SR. The best results are indicated in bold.
 Visual comparison of the results of our DRMSFFN with those of other state-of-the-art methods on some images from the Urban100 and Manga109 datasets for ×4 SR. The
 best results are indicated in bold.
 
-Running time comparison
+Model Analysis
 ![figure8](https://user-images.githubusercontent.com/42378133/207536640-f77e62af-fd6e-4739-a989-8f4cfec30401.png)
 The running time, number of parameters and performance of different SISR methods. The results denote the mean PSNR and running time for scale factor x4 on the Set5 dataset.
