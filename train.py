@@ -1,4 +1,4 @@
-﻿import argparse       #导入了该模块之后，就有变量argparse指向这个模块，就可以利用这个变量访问这个模块的所有功能
+import argparse      
 from tqdm import tqdm
 import options.options as option
 from utils import util
@@ -8,12 +8,11 @@ from data import create_dataset
 
 def main():
     #将JSON文件进行解析
-    parser = argparse.ArgumentParser(description='Train Super Resolution Models')               #创建了一个解析器的对象
+    parser = argparse.ArgumentParser(description='Train Super Resolution Models')              
     parser.add_argument('-opt', type=str, required=True, help='Path to options JSON file.')
-    opt = option.parse(parser.parse_args().opt)   #通过parser.parse_args()函数将json文件的路径进行解析，放在一个opt的变量中，
-                                                  #通过option.parse将json文件解析成一个多级字典
-    # fix random seed
-    seed = opt['solver']['manual_seed']       #多重字典通过名称进行访问,固定人工种子保证每次随机取到的数据是一样的
+    opt = option.parse(parser.parse_args().opt)   
+    
+    seed = opt['solver']['manual_seed']       
     util.pytorch_fix_seed(seed)
 
     # create train and val dataloader
@@ -32,15 +31,15 @@ def main():
         else:
             raise NotImplementedError("[Error] Dataset phase [%s] in *.json is not recognized." % phase)
 
-    solver = create_solver(opt)   #创建一个解决办法
+    solver = create_solver(opt)   
 
     scale = opt['scale']
-    model_name = opt['networks']['which_model'].upper()  #网络模型的名字变成大写字母
+    model_name = opt['networks']['which_model'].upper()  
 
     print('===> Start Train')
     print("==================================================")
 
-    solver_log = solver.get_current_log()    #记录实验过程
+    solver_log = solver.get_current_log()    
 
     NUM_EPOCH = int(opt['solver']['num_epochs'])
     start_epoch = solver_log['epoch']
@@ -57,8 +56,8 @@ def main():
 
         # Train model
         train_loss_list = []
-        with tqdm(total=len(train_loader), desc='Epoch: [%d/%d]'%(epoch, NUM_EPOCH), miniters=1) as t:  #用来显示进度条的
-            for iter, batch in enumerate(train_loader):          #在此处进行了数据增强
+        with tqdm(total=len(train_loader), desc='Epoch: [%d/%d]'%(epoch, NUM_EPOCH), miniters=1) as t:  
+            for iter, batch in enumerate(train_loader):          
                 solver.feed_data(batch)
                 iter_loss = solver.train_step()
                 batch_size = batch['LR'].size(0)
@@ -121,5 +120,5 @@ def main():
     print('===> Finished !')
 
 
-if __name__ == '__main__':       #使得其它.py文件可以调用main函数,而不去执行main函数里面的东西
+if __name__ == '__main__':     
     main()
