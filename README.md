@@ -42,14 +42,14 @@ Quantitative Results:![Quantitative Results](https://user-images.githubuserconte
 Quantitative comparison for scale factors ×2, ×3 and ×4 of the proposed method DRMSFFN with state-of-the-art methods. The best and the second best results are indicated in bold and underlined, respectively.
 
 Some Qualitative Results:
-![FIGURE6](https://user-images.githubusercontent.com/42378133/207484288-5fcfd44d-9948-4ce7-a6cc-d049d098d5b6.png)
+![figure6](https://user-images.githubusercontent.com/42378133/207536546-8ae5d527-2ca0-4904-ae52-1ea6cc5db028.png)
 Visual comparison of the results of the proposed method DRMSFFN with those of other state-of-the-art methods on some images from the Set14 and B100 datasets for ×4
 SR. The best results are indicated in bold.
 
-![FIGURE7](https://user-images.githubusercontent.com/42378133/207484774-abcde8ec-6867-4728-bab0-7913ed2e0baf.png)
+![figure7](https://user-images.githubusercontent.com/42378133/207536598-b7e39d48-b38a-4ffe-8f87-a9691278c2ce.png)
 Visual comparison of the results of our DRMSFFN with those of other state-of-the-art methods on some images from the Urban100 and Manga109 datasets for ×4 SR. The
 best results are indicated in bold.
 
 Running time comparison
-![FIGURE8](https://user-images.githubusercontent.com/42378133/207485430-ba745663-8cba-401c-9481-7a3762fc36f2.png)
+![figure8](https://user-images.githubusercontent.com/42378133/207536640-f77e62af-fd6e-4739-a989-8f4cfec30401.png)
 The running time, number of parameters and performance of different SISR methods. The results denote the mean PSNR and running time for scale factor x4 on the Set5 dataset.
