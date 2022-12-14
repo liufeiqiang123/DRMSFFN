@@ -41,6 +41,13 @@ If you find our work useful in your research or publications, please star the co
 Quantitative Results:![Quantitative Results](https://user-images.githubusercontent.com/42378133/207483168-2570d986-637d-42b1-888a-572775799ca0.png)
 Quantitative comparison for scale factors ×2, ×3 and ×4 of the proposed method DRMSFFN with state-of-the-art methods. The best and the second best results are indicated in bold and underlined, respectively.
 
+Some Qualitative Results:
+![FIGURE6](https://user-images.githubusercontent.com/42378133/207484288-5fcfd44d-9948-4ce7-a6cc-d049d098d5b6.png)
+Visual comparison of the results of the proposed method DRMSFFN with those of other state-of-the-art methods on some images from the Set14 and B100 datasets for ×4
+SR. The best results are indicated in bold.
+![FIGURE7](https://user-images.githubusercontent.com/42378133/207484774-abcde8ec-6867-4728-bab0-7913ed2e0baf.png)
+Visual comparison of the results of our DRMSFFN with those of other state-of-the-art methods on some images from the Urban100 and Manga109 datasets for ×4 SR. The
+best results are indicated in bold.
 
 
 
