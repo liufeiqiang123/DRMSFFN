@@ -45,6 +45,7 @@ Some Qualitative Results:
 ![FIGURE6](https://user-images.githubusercontent.com/42378133/207484288-5fcfd44d-9948-4ce7-a6cc-d049d098d5b6.png)
 Visual comparison of the results of the proposed method DRMSFFN with those of other state-of-the-art methods on some images from the Set14 and B100 datasets for ×4
 SR. The best results are indicated in bold.
+
 ![FIGURE7](https://user-images.githubusercontent.com/42378133/207484774-abcde8ec-6867-4728-bab0-7913ed2e0baf.png)
 Visual comparison of the results of our DRMSFFN with those of other state-of-the-art methods on some images from the Urban100 and Manga109 datasets for ×4 SR. The
 best results are indicated in bold.
