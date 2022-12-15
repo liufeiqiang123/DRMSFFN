@@ -7,7 +7,7 @@ Structure of the Recursive Multi-Scale Feature Fusion Block (RMSFFB).
 
 The details about our proposed DRMSFFN can be found in our main paper:https://www.sciencedirect.com/science/article/pii/S1047320322002504
 
-If you find our work useful in your research or publications, please star the code and consider citing:
+If you find our work useful in your research work, please star the code and consider citing:
 
     @article{liu2022deep,
       title={A deep recursive multi-scale feature fusion network for image super-resolution},
