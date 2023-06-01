@@ -9,12 +9,13 @@ The details about our proposed DRMSFFN can be found in our paper:https://www.sci
 
 If you find our work useful in your research work, please star the code and consider citing:
 
-    @article{liu2022deep,
+    @article{liu2023deep,
       title={A deep recursive multi-scale feature fusion network for image super-resolution},
       author={Liu, Feiqiang and Yang, Xiaomin and De Baets, Bernard},
       journal={Journal of Visual Communication and Image Representation},
+      volume={90},
       pages={103730},
-      year={2022},
+      year={2023},
       publisher={Elsevier}
     }
 
